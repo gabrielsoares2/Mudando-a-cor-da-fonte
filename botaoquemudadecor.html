@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mudando cor do fundo</title>
+
+	<style>
+		div#all {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		div#botoes {
+			display: flex;
+			flex-direction: row;
+		}
+	</style>
+
+</head>
+<body>
+	<div id='all'>
+		<h1 id='aqui'>Aperte para mudar de cor</h1>
+		<div id='botoes'>
+			<button id='blue' onclick="clicar1()">Azul</button>
+			<button id='green' onclick="clicar2()">Verde</button>
+			<button id='red' onclick="clicar3()">Vermelho</button>
+		</div>
+	</div>
+
+	<script>
+		
+		var azul = document.getElementById('aqui')
+		var verde = document.getElementById('aqui')
+		var vermelho = document.getElementById('aqui')
+
+		function clicar1() {
+			azul.style.color = 'blue'
+		}
+
+		function clicar2() {
+			verde.style.color = 'green'
+		}
+
+		function clicar3() {
+			vermelho.style.color = 'red'
+		}
+	</script>
+
+</body>
+</html>
