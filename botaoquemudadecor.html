@@ -11,6 +11,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			height: 90vh;
 		}
 
 		div#botoes {
@@ -24,30 +25,13 @@
 	<div id='all'>
 		<h1 id='aqui'>Aperte para mudar de cor</h1>
 		<div id='botoes'>
-			<button id='blue' onclick="clicar1()">Azul</button>
-			<button id='green' onclick="clicar2()">Verde</button>
-			<button id='red' onclick="clicar3()">Vermelho</button>
+			<button id='blue' onclick="mudarcor('blue')">Azul</button>
+			<button id='green' onclick="mudarcor('green')">Verde</button>
+			<button id='red' onclick="mudarcor('red')">Vermelho</button>
 		</div>
 	</div>
 
-	<script>
-		
-		var azul = document.getElementById('aqui')
-		var verde = document.getElementById('aqui')
-		var vermelho = document.getElementById('aqui')
-
-		function clicar1() {
-			azul.style.color = 'blue'
-		}
-
-		function clicar2() {
-			verde.style.color = 'green'
-		}
-
-		function clicar3() {
-			vermelho.style.color = 'red'
-		}
-	</script>
+	<script src="botao.js"></script>
 
 </body>
 </html>
